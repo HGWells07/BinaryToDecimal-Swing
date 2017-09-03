@@ -32,10 +32,25 @@ public class Ventana extends Frame{
         "Decimal a binario", "Binario a decimal"
     };
     
+    /**
+    * <h1>Ventana</h1>
+    * Configura y agrega todos los elementos a través de métodos
+    * 
+    * @see configElementos
+    * @see agregarElementos
+    */
     public Ventana(){
         configElementos();
         agregarElementos();
     }
+    
+    /**
+    * <h1>configElementos</h1>
+    * Especifica cosas como la ubicación, tamaño y contenido le los elementos
+    * que se agregaran a la Ventana
+    * 
+    * @see agregarElementos
+    */
     
     private void configElementos(){
         
@@ -105,6 +120,13 @@ public class Ventana extends Frame{
             
         });
     }
+    
+    /**
+     *<h1>agregarElementos</h1>
+     * Agrega los elementos que se inicializaron en configElementos a la ventana
+     * 
+     * @see configElementos
+     */
     
     private void agregarElementos() {
         this.add(tituloLab);

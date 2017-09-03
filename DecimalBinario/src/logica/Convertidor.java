@@ -14,6 +14,14 @@ import java.util.Collections;
  */
 public class Convertidor {
     
+    /**
+     * <h1>decimalABinario</h1>
+     * 
+     * Transforma números de decimal a un String equivalente a su binario
+     * 
+     * @param decimal Entero que se quiere transformar a binario
+     * @return resultado Cadena de texto de 1 y 0s que representa al decimal en binario
+     */
     public String decimalABinario(int decimal){
         ArrayList<Integer> binArray = new ArrayList<>();
         String resultado = "";
@@ -28,6 +36,16 @@ public class Convertidor {
         return resultado;
     }
     
+    /**
+     * <h1>decimalABinario</h1>
+     * 
+     * Toma un binario en String y en base a sus valores en cada posición
+     * crea un valor numérico
+     * 
+     * @param binario binario que se quiere convertir a string
+     * @return resultado Resultado decimal del binario
+     * @throws java.lang.Exception Indica que la String que se pasó no es binrio
+     */
     public int binarioADecimal(String binario) throws Exception{
         ArrayList<Integer> binarioList = new ArrayList<>();
         
